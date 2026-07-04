@@ -135,9 +135,14 @@ main {
   text-decoration: none;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  color: var(--text);
+}
+
 .nav-links a.active {
   color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .nav-toggle {
@@ -330,4 +335,22 @@ main {
 ::selection {
   background: var(--text);
   color: var(--bg);
+}
+
+/* Keyboard focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--text);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* External links */
+a[target="_blank"]::after {
+  content: "\2197";
+  display: inline-block;
+  margin-left: 0.25em;
+  color: var(--text-faint);
+  font-size: 0.85em;
+  text-decoration: none;
 }
