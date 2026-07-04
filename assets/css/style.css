@@ -469,6 +469,17 @@ main {
   color: var(--text);
 }
 
+/* Social link buttons (small inline) */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.social-links .btn {
+  margin-top: 0;
+}
+
 /* Support guidelines */
 .checklist {
   list-style: none;
