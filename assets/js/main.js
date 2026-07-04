@@ -14,8 +14,26 @@
   var btn = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
   if (btn && links) {
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
       links.classList.toggle('open');
+      btn.textContent = links.classList.contains('open') ? 'close' : 'menu';
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function (e) {
+      if (links.classList.contains('open') && !links.contains(e.target) && e.target !== btn) {
+        links.classList.remove('open');
+        btn.textContent = 'menu';
+      }
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && links.classList.contains('open')) {
+        links.classList.remove('open');
+        btn.textContent = 'menu';
+      }
     });
   }
 })();
@@ -35,6 +53,6 @@
 
 // Auto-update copyright year
 (function () {
-  var el = document.querySelector('[data-year]');
+  var el = document.querySelectorAll('[data-year]');
   if (el) el.textContent = new Date().getFullYear();
 })();

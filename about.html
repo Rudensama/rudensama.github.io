@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>about — rudensama</title>
-<meta name="description" content="About rudensama." />
-<meta name="theme-color" content="#0b0b0b" />
-<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-<link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about — rudensama</title>
+  <meta name="description" content="About rudensama." />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
@@ -25,12 +25,58 @@
 </header>
 
 <main>
-  <section class="container intro">
-    <div class="section-label">about</div>
-    <h1>rudensama</h1>
-    <p>Solo developer. I build games and apps — desktop and mobile, no particular niche.</p>
-    <p>More details will appear here over time. For now, the best way to reach me is by <a href="contact.html">email</a>.</p>
-  </section>
+  <div class="container fade-in">
+    <div class="intro-block">
+      <h1 style="display:none;">about</h1> <!-- Hidden for SEO heading structure compliance, but visible heading is below -->
+    </div>
+    
+    <div class="main-grid">
+      <!-- Left Column: Story -->
+      <div class="grid-col">
+        <section>
+          <div class="section-title">about me</div>
+          <div class="intro-block">
+            <h2 style="font-size: 2.25rem; line-height: 1.15; margin-bottom: 1.25rem; letter-spacing: -0.03em;">rudensama</h2>
+          </div>
+          <p>I am a solo developer who builds games and apps. My focus spans desktop and mobile platforms, exploring different genres and tech stacks without binding myself to a specific niche.</p>
+          <p>I value clean designs, simple game loops, and responsive controls. More details and insights on my design process will appear here as new projects ship.</p>
+          <p>For support, inquiries, or feedback, the best way to reach me is via the <a href="contact.html">contact page</a>.</p>
+        </section>
+      </div>
+      
+      <!-- Right Column: Profile details -->
+      <div class="grid-col">
+        <section>
+          <div class="section-title">profile</div>
+          <div class="list">
+            <div class="list-item">
+              <div class="list-item-header">
+                <span class="item-title">Current Role</span>
+                <span class="item-meta">Active</span>
+              </div>
+              <div class="item-desc">Independent Solo Game &amp; App Developer.</div>
+            </div>
+            
+            <div class="list-item">
+              <div class="list-item-header">
+                <span class="item-title">Focus Areas</span>
+                <span class="item-meta">Platforms</span>
+              </div>
+              <div class="item-desc">Mobile (Android / iOS) &amp; Desktop (Windows / macOS / Linux).</div>
+            </div>
+            
+            <div class="list-item">
+              <div class="list-item-header">
+                <span class="item-title">Interests</span>
+                <span class="item-meta">Stack</span>
+              </div>
+              <div class="item-desc">Game design, minimalist UI/UX, C#, Rust, and lightweight web technologies.</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer class="site-footer">

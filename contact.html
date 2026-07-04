@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>contact — rudensama</title>
-<meta name="description" content="Contact rudensama for support, business inquiries, or general questions." />
-<meta name="theme-color" content="#0b0b0b" />
-<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-<link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact — rudensama</title>
+  <meta name="description" content="Contact rudensama for support, business inquiries, or general questions." />
+  <meta name="theme-color" content="#141210" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
@@ -25,54 +25,73 @@
 </header>
 
 <main>
-  <section class="container intro">
-    <div class="section-label">contact</div>
-    <h1>Get in touch</h1>
-    <p>For player/user support, business inquiries, press, or general questions:</p>
-    <p><a class="email" data-email href="#">rudensama.dev@gmail.com</a></p>
-  </section>
-
-  <section class="container section">
-    <div class="section-label">support requests</div>
-    <p>If you're having trouble with one of my games or apps, please include:</p>
-    <ul>
-      <li>Title and version</li>
-      <li>Device and OS version</li>
-      <li>What happened and how to reproduce it</li>
-      <li>Screenshots or a short clip, if possible</li>
-    </ul>
-    <p>I try to reply within a few business days.</p>
-  </section>
-
-  <section class="container section">
-    <div class="section-label">elsewhere</div>
-    <ul class="list">
-      <li>
-        <span class="meta">youtube</span>
-        <div>
-          <div class="title"><a href="https://www.youtube.com/@Rudensama" target="_blank" rel="noopener">@Rudensama</a></div>
-        </div>
-      </li>
-      <li>
-        <span class="meta">x</span>
-        <div>
-          <div class="title"><a href="https://x.com/Rudensama" target="_blank" rel="noopener">@Rudensama</a></div>
-        </div>
-      </li>
-      <li>
-        <span class="meta">linkedin</span>
-        <div>
-          <div class="title"><a href="https://www.linkedin.com/in/sod-erdene-byambatogtokh-0b4773265/" target="_blank" rel="noopener">Erdenee</a></div>
-        </div>
-      </li>
-      <li>
-        <span class="meta">github</span>
-        <div>
-          <div class="title"><a href="https://github.com/Rudensama" target="_blank" rel="noopener">@Rudensama</a></div>
-        </div>
-      </li>
-    </ul>
-  </section>
+  <div class="container fade-in">
+    <div class="intro-block">
+      <h1>Get in touch</h1>
+      <p>Reach out for support, business inquiries, press features, or general feedback.</p>
+    </div>
+    
+    <div class="main-grid">
+      <!-- Left Column: Email & Socials -->
+      <div class="grid-col">
+        <section>
+          <div class="section-title">direct contact</div>
+          <div class="list">
+            <div class="list-item" style="border-color: var(--accent); background: var(--accent-faint);">
+              <div class="list-item-header">
+                <span class="item-title" style="color: var(--accent);">Email Address</span>
+                <span class="item-meta">Primary</span>
+              </div>
+              <p class="item-desc" style="margin-bottom: 0.75rem;">For all direct inquiries and business talks. Click below to copy or open in mail client:</p>
+              <a class="btn" data-email href="#" style="margin-top: 0.25rem;">rudensama.dev@gmail.com</a>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="section-title">elsewhere</div>
+          <div class="list">
+            <a href="https://github.com/Rudensama" class="list-item" target="_blank" rel="noopener">
+              <div class="list-item-header">
+                <span class="item-title">GitHub</span>
+                <span class="item-meta">@Rudensama</span>
+              </div>
+              <div class="item-desc">Browse source code and open-source contributions.</div>
+            </a>
+            <a href="https://x.com/Rudensama" class="list-item" target="_blank" rel="noopener">
+              <div class="list-item-header">
+                <span class="item-title">X / Twitter</span>
+                <span class="item-meta">@Rudensama</span>
+              </div>
+              <div class="item-desc">Follow for daily development logs and quick news.</div>
+            </a>
+          </div>
+        </section>
+      </div>
+      
+      <!-- Right Column: Support Guidelines -->
+      <div class="grid-col">
+        <section>
+          <div class="section-title">support guidelines</div>
+          <div class="list">
+            <div class="list-item">
+              <div class="list-item-header">
+                <span class="item-title">Troubleshooting &amp; Bug Reports</span>
+              </div>
+              <p class="item-desc" style="margin-bottom: 1.25rem;">If you are experiencing issues with any of my games or apps, please include the following details in your email so I can assist you faster:</p>
+              <ul class="checklist">
+                <li>App title and current version number</li>
+                <li>Device model and operating system version (e.g., Pixel 7, Android 14)</li>
+                <li>Detailed description of the issue and steps to reproduce it</li>
+                <li>Screenshots or a link to a screen recording, if possible</li>
+              </ul>
+              <p class="item-desc" style="margin-bottom: 0; font-size: 0.85rem; color: var(--text-faint);">I review support tickets weekly and aim to reply within 2-3 business days.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer class="site-footer">
