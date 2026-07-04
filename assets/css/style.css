@@ -469,6 +469,18 @@ main {
   color: var(--text);
 }
 
+/* Button group (inline row) */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.btn-group .btn {
+  margin-top: 0;
+}
+
 /* Social link buttons (small inline) */
 .social-links {
   display: flex;
