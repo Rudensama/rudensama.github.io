@@ -350,7 +350,7 @@ main {
 .list-item-content {
   display: flex;
   gap: 1.25rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .list-item-icon {
