@@ -427,6 +427,12 @@ main {
   border-color: rgba(80, 90, 80, 0.2);
 }
 
+.badge-cancelled {
+  background: rgba(150, 95, 95, 0.1);
+  color: #b78787;
+  border-color: rgba(150, 95, 95, 0.28);
+}
+
 /* Buttons (DRY implementation) */
 .btn {
   display: inline-flex;
