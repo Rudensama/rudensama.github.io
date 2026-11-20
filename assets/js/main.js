@@ -53,6 +53,31 @@
 
 // Auto-update copyright year
 (function () {
-  var el = document.querySelectorAll('[data-year]');
-  if (el) el.textContent = new Date().getFullYear();
+  var year = new Date().getFullYear();
+  document.querySelectorAll('[data-year]').forEach(function (el) {
+    el.textContent = year;
+  });
+})();
+
+// Reveal content as it enters the viewport, staggered within each batch
+(function () {
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var items = document.querySelectorAll(
+    '.intro-block, .section-title, .list-item, .now-list li, .social-links, ' +
+    'section > .btn, section > p, .legal-sidebar, .legal-content'
+  );
+  var io = new IntersectionObserver(function (entries) {
+    var n = 0;
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      entry.target.style.setProperty('--d', (n++ * 70) + 'ms');
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px 0px -40px 0px' });
+  items.forEach(function (el) {
+    el.classList.add('reveal');
+    io.observe(el);
+  });
 })();

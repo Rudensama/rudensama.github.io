@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>rudensama</title>
   <meta name="description" content="rudensama — solo developer making games and apps." />
-  <meta name="theme-color" content="#0b0f14" />
+  <meta name="theme-color" content="#161a21" />
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -25,54 +25,38 @@
 </header>
 
 <main>
-  <div class="container fade-in">
+  <div class="container">
     <div class="intro-block">
       <h1>rudensama</h1>
       <p>Solo developer. Making games and apps for desktop and mobile.</p>
     </div>
-    
+
     <div class="main-grid">
-      <!-- Column 1: Featured Work / Now -->
       <div class="grid-col">
         <section>
           <div class="section-title">now</div>
-          <div class="list">
-            <div class="list-item">
-              <div class="list-item-content">
-                <img class="list-item-icon" src="assets/img/hexapress-icon.webp" alt="HexaPress icon" width="56" height="56" />
-                <div class="list-item-text">
-                  <div class="list-item-header">
-                    <span class="item-title">HexaPress <span class="badge badge-live">released</span></span>
-                    <span class="item-meta">2026</span>
-                  </div>
-                  <div class="item-desc">A hexagonal block puzzle game for mobile devices. Clean interface, satisfying combos, and offline play.</div>
-                  <div class="btn-group">
-                    <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=rudensama.game.hexapress" target="_blank" rel="noopener">Play Store</a>
-                    <a class="btn" disabled aria-disabled="true" style="opacity:0.4;pointer-events:none;cursor:not-allowed;" href="#">App Store</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-item-content">
-                <img class="list-item-icon" src="assets/img/mmf_header.jpg" alt="Make me Float icon" width="56" height="56" />
-                <div class="list-item-text">
-                  <div class="list-item-header">
-                    <span class="item-title">Make me Float <span class="badge badge-live">demo out</span></span>
-                    <span class="item-meta">2024</span>
-                  </div>
-                  <div class="item-desc">Worked on the demo and game design for an indie studio project.</div>
-                  <div class="btn-group">
-                    <a class="btn btn-secondary" href="https://store.steampowered.com/app/2165530/Make_me_Float/" target="_blank" rel="noopener">Steam</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ul class="now-list">
+            <li>
+              <img src="assets/img/mmf_header.jpg" alt="" width="28" height="28" />
+              <span><strong>Make me Float</strong> demo is out on <a href="https://store.steampowered.com/app/2165530/Make_me_Float/" target="_blank" rel="noopener">Steam</a>. I worked on the demo and game design.</span>
+            </li>
+            <li>
+              <img src="assets/img/tas-app-icon.svg" alt="" width="28" height="28" />
+              <span>Building <strong>TAS POS</strong>, a point-of-sale system for Mongolian retail: desktop app, mobile app, admin panel, and website. <a href="https://tas.mn" target="_blank" rel="noopener">Visit site</a></span>
+            </li>
+            <li>
+              <img src="assets/img/mr-nomadic-logo.svg" alt="" width="28" height="28" />
+              <span>Building <strong>Mr. Nomadic</strong>, a travel website for Korean travelers visiting Mongolia. <a href="https://rudensama.github.io/mrnomadic/" target="_blank" rel="noopener">Visit site</a></span>
+            </li>
+            <li>
+              <img src="assets/img/hexapress-icon.webp" alt="" width="28" height="28" />
+              <span>Latest release: <strong>HexaPress</strong>, a hexagonal block puzzle game on <a href="https://play.google.com/store/apps/details?id=rudensama.game.hexapress" target="_blank" rel="noopener">Google Play</a>.</span>
+            </li>
+          </ul>
+          <a class="btn" href="work.html">See all work</a>
         </section>
       </div>
-      
-      <!-- Column 2: Else / Connections -->
+
       <div class="grid-col">
         <section>
           <div class="section-title">elsewhere</div>
@@ -82,6 +66,10 @@
             <a href="https://www.youtube.com/@Rudensama" class="btn" target="_blank" rel="noopener">YouTube</a>
             <a href="https://www.linkedin.com/in/sod-erdene-byambatogtokh-0b4773265/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
           </div>
+        </section>
+        <section>
+          <div class="section-title">contact</div>
+          <p>For work, support, or anything else: <a data-email href="contact.html">email</a>.</p>
         </section>
       </div>
     </div>
